@@ -1,0 +1,39 @@
+.navigation {
+    border: 2px solid white;
+    display: flex;
+    padding: 0;
+  }
+  
+  /* Apply the styles directly to NavLink, which renders an anchor tag */
+  .navigation a:not(.active) {
+    color: #ddd; /* Inactive link color */
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+  }
+  
+  /* Active class for the NavLink */
+  .navigation a.active {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #FFF;
+    color: #000; /* Active link text color */
+  }
+  
+  /* Adjusted hover style for NavLink */
+  .navigation a:hover {
+    background-color: #FFF;
+    color: #000;
+  }
+  
+  /* The active class applied by NavLink when the link is active */
+  .active {
+    background-color: #FFF;
+    color: #000;
+  }
+  
+  /* Right align help link, if you still need this */
+  .navigation .right {
+    margin-left: auto;
+    margin-right: 0;
+  }

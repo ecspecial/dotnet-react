@@ -1,0 +1,40 @@
+.task-grid-container {
+    margin-top: 1rem;
+    overflow-y: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .task-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    overflow-y: auto;
+  }
+  
+  .task-item {
+    border: 2px solid white;
+  }
+  
+  .task-item:hover {
+    background-color: #2e2e2e;
+  }
+
+  .task-element {
+    border-bottom: 2px solid white;
+    padding: 5px;
+  }
+
+  .journals-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .relations-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .checklist {
+    margin-top: 5px;
+  }

@@ -1,0 +1,147 @@
+/* App.css */
+body {
+  background-color: #777777; /* Darkish background for the overall app */
+  color: white;
+}
+
+.appContainer {
+  background-color: #1e1e1e; /* Slightly lighter than the app background */
+  border-radius: 8px; /* Rounded borders */
+  padding: 20px;
+  margin: 20px;
+  color: #fff;
+  border-color: 2px solid #a80000;
+}
+
+/* Add padding to the main content area */
+.main-content {
+  padding: 20px; /* Adjust the padding as needed */
+}
+
+/* Ensure that the NavBar remains full width */
+.navigation {
+  background-color: #1e1e1e; /* Dark background */
+  overflow: hidden;
+  position: relative; /* Add this to ensure the navbar stays at the top */
+  width: 100%; /* Full width */
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Display links in a row */
+  align-items: center; /* Center items vertically */
+  justify-content: flex-start; /* Align items to the start of the container */
+}
+
+.navigation li {
+  float: left;
+}
+
+.navigation li.help {
+  margin-left: auto; /* This will push the Help link to the right */
+}
+
+.navigation li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s; /* Smooth transition for hover effect */
+}
+
+.navigation li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add responsiveness - On small screens, display the navbar vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .navigation ul {
+    flex-direction: column; /* Stack links vertically */
+  }
+}
+
+.form {
+  margin-top: 20px;
+  padding-right: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #555;
+  background-color: #333;
+  color: #ddd;
+}
+
+.button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #0078d4;
+  color: #fff;
+}
+
+.button:hover {
+  background-color: #005a9e;
+}
+
+.cancelButton {
+  background-color: #a80000;
+}
+
+.cancelButton:hover {
+  background-color: #800000;
+}
+
+ /* Root.module.css */
+ .editButton {
+  padding: 8px 12px;
+  border: 1px solid #0078d4;
+  border-radius: 4px;
+  background-color: #0078d4;
+  color: #fff;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.editButton:hover {
+  background-color: #005a9e;
+}
+
+.deleteButton {
+  padding: 8px 12px;
+  border: 1px solid #a80000;
+  border-radius: 4px;
+  background-color: #a80000;
+  color: #fff;
+}
+
+.deleteButton:hover {
+  background-color: #800000;
+}
+
+.updateButton {
+padding: 8px 12px;
+border: 1px solid #4caf50; /* Green border */
+border-radius: 4px;
+background-color: #4caf50; /* Green background */
+color: #fff; /* White text */
+}
+
+.updateButton:hover {
+background-color: #45a049; /* Darker green on hover */
+}

@@ -1,0 +1,42 @@
+stages:
+  - build
+  - test-unit
+  - test-integration
+  - test-e2e
+
+build-job:
+  stage: build
+  script:
+    - cd /builds/andebugan/plorg/PlorgWeb
+    - dotnet build
+
+test-unit-job:
+  stage: test-unit
+  script:
+    - cd /builds/andebugan/plorg/PlorgTest
+    - dotnet test --filter Type=Unit
+  artifacts:
+    paths:
+      - PlorgTest/bin/Debug/net6.0-windows/allure-results/
+
+test-integration-job:
+  stage: test-integration
+  script:
+    - cd /builds/andebugan/plorg/PlorgTest
+    - dotnet test --filter Type=Integration
+  artifacts:
+    paths:
+      - PlorgTest/bin/Debug/net6.0-windows/allure-results/
+
+test-e2e-job:
+  stage: test-e2e
+  script:
+    - cd /builds/andebugan/plorg/PlorgTest
+    - dotnet build
+    - cd /builds/andebugan/plorg/PlorgWeb
+    - dotnet run &
+    - cd /builds/andebugan/plorg/PlorgTest
+    - dotnet test --filter Type=E2E
+  artifacts:
+    paths:
+      - PlorgTest/bin/Debug/net6.0-windows/allure-results/

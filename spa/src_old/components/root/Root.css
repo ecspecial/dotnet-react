@@ -1,0 +1,21 @@
+/* Root.css */  
+  .rootList {
+    margin-top: 20px;
+    background-color: #2f2f30; /* Darkish background blocks for list items */
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .rootItem {
+    background-color: #2b2b2b;
+    border: 1px solid #5d5d5d; /* Slightly lighter border for each item */
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .rootItem {
+    position: relative;
+    /* existing styles */
+  }

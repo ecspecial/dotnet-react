@@ -1,0 +1,26 @@
+body, html {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 1rem;
+}
+
+.main-content {
+  padding-top: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+  width: 100%;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+li:hover {
+  background-color: rgba(255, 255, 255, 0.5); /* White background with 50% opacity */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
